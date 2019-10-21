@@ -1,0 +1,15 @@
+﻿@model paystation_two_party.Models.PaymentResponse
+
+@{
+    ViewData["Title"] = "Payment result";
+}
+
+<h1>Transaction response details</h1>
+
+<div>
+    @Html.DisplayFor(model => model.Code) - @Html.DisplayFor(model => model.Message)
+    <hr />
+    <div>
+        @Html.DisplayFor(model => model.ResponseXml)
+    </div>
+</div>
